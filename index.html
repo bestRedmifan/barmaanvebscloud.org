@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Barmaan Vebs Cloud</title>
+<link rel="stylesheet" href="style.css">
+</head><body><div id="app"><!-- HOME --><section id="homePage" class="page"><h1>☁️ Barmaan Vebs Cloud</h1>
+<p>Choose your storage space.</p><!-- PUBLIC SLOT --><div class="card"><h2>🌐 Public Slot</h2>
+<p>Shared space for everyone.</p><div class="stats"><div>
+<span>Used</span>
+<b id="publicUsed">0 files</b>
+</div><div>
+<span>Available</span>
+<b id="publicAvailable">5000 files</b>
+</div><div>
+<span>Full</span>
+<b id="publicPercent">0%</b>
+</div></div><div class="progress">
+<div
+id="publicProgress"
+class="bar public"
+style="width:0%">
+</div>
+</div><p>
+Public Slot filled:
+<strong id="publicPercentText">0%</strong>
+</p><button id="publicButton">
+Public Slot
+</button></div><!-- PRIVATE SLOTS --><div class="card"><h2>🔒 Private Slots</h2>
+<p>Each Slot has 10000 files available.</p><div class="slots"><!-- SLOT 1 --><div class="slot">
+<h3>Slot 1</h3>
+<p id="available1">10000 files available</p><b id="percent1">0%</b>
+
+<div class="progress">
+<div
+id="progress1"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText1">0%</strong>
+</p><button data-slot="1" class="join">
+Join
+</button>
+</div><!-- SLOT 2 --><div class="slot">
+<h3>Slot 2</h3>
+<p id="available2">10000 files available</p><b id="percent2">0%</b>
+
+<div class="progress">
+<div
+id="progress2"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText2">0%</strong>
+</p><button data-slot="2" class="join">
+Join
+</button>
+</div><!-- SLOT 3 --><div class="slot">
+<h3>Slot 3</h3>
+<p id="available3">10000 files available</p><b id="percent3">0%</b>
+
+<div class="progress">
+<div
+id="progress3"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText3">0%</strong>
+</p><button data-slot="3" class="join">
+Join
+</button>
+</div><!-- SLOT 4 --><div class="slot">
+<h3>Slot 4</h3>
+<p id="available4">10000 files available</p><b id="percent4">0%</b>
+
+<div class="progress">
+<div
+id="progress4"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText4">0%</strong>
+</p><button data-slot="4" class="join">
+Join
+</button>
+</div><!-- SLOT 5 --><div class="slot">
+<h3>Slot 5</h3>
+<p id="available5">10000 files available</p><b id="percent5">0%</b>
+
+<div class="progress">
+<div
+id="progress5"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText5">0%</strong>
+</p><button data-slot="5" class="join">
+Join
+</button>
+</div><!-- SLOT 6 --><div class="slot">
+<h3>Slot 6</h3>
+<p id="available6">10000 files available</p><b id="percent6">0%</b>
+
+<div class="progress">
+<div
+id="progress6"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText6">0%</strong>
+</p><button data-slot="6" class="join">
+Join
+</button>
+</div><!-- SLOT 7 --><div class="slot">
+<h3>Slot 7</h3>
+<p id="available7">10000 files available</p><b id="percent7">0%</b>
+
+<div class="progress">
+<div
+id="progress7"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText7">0%</strong>
+</p><button data-slot="7" class="join">
+Join
+</button>
+</div><!-- SLOT 8 --><div class="slot">
+<h3>Slot 8</h3>
+<p id="available8">10000 files available</p><b id="percent8">0%</b>
+
+<div class="progress">
+<div
+id="progress8"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText8">0%</strong>
+</p><button data-slot="8" class="join">
+Join
+</button>
+</div><!-- SLOT 9 --><div class="slot">
+<h3>Slot 9</h3>
+<p id="available9">10000 files available</p><b id="percent9">0%</b>
+
+<div class="progress">
+<div
+id="progress9"
+class="bar"
+style="width:0%">
+</div>
+</div><p>
+Filled:
+<strong id="percentText9">0%</strong>
+</p><button data-slot="9" class="join">
+Join
+</button>
+</div></div>
+</div><!-- FILE TYPES --><div class="card"><h2>🎨 File types</h2><div class="legend"><div class="type doc">
+DOC — Blue
+</div><div class="type photo">
+Photo — Green
+</div><div class="type video">
+Video — Red
+</div><div class="type apk">
+APK / EXE — Yellow
+</div><div class="type mobile">
+Mobile backup/config — Pink
+</div></div></div><!-- CHECK PRIVATE FILES --><div class="card"><h2>🔍 Private files</h2><button id="checkButton">
+Check your private files
+</button></div></section><!-- PUBLIC PAGE --><section id="publicPage" class="page hidden"><h1>🌐 Public Slot</h1><div id="publicNotice"></div><div class="card"><div class="stats"><div>
+<span>Used</span>
+<b id="publicUsed2">0 files</b>
+</div><div>
+<span>Total</span>
+<b id="publicTotal2">5000 files</b>
+</div><div>
+<span>Full</span>
+<b id="publicPercent2">0%</b>
+</div></div><div class="progress"><div
+id="publicProgress2"
+class="bar public"
+style="width:0%">
+</div></div><p>
+Public Slot filled:
+<strong id="publicPercentText2">0%</strong>
+</p></div><div class="card"><h2>Public files</h2><div id="publicFiles">
+No files.
+</div></div><button class="back">
+Back
+</button></section><!-- LOGIN PAGE --><section id="loginPage" class="page hidden"><h1>🔐 Join Slot</h1><div class="card"><p id="loginText">
+Enter Slot password.
+</p><input
+id="slotPassword"
+type="password"
+inputmode="numeric"
+maxlength="5"
+placeholder="Slot password">
+
+<button id="loginButton">
+Join Slot
+</button><p id="loginError" class="error"></p></div><button class="back">
+Back
+</button></section><!-- PRIVATE PAGE --><section id="privatePage" class="page hidden"><h1 id="privateTitle">
+Slot
+</h1><div
+id="privateInfo"
+class="card">
+</div><div class="card"><h2>Private files</h2><div id="privateFiles">
+No files.
+</div></div><button class="back">
+Back
+</button></section><!-- CHECK PAGE --><section id="checkPage" class="page hidden"><h1>
+🔍 Check your private files
+</h1><div class="card"><input
+id="checkSlot"
+type="number"
+min="1"
+max="9"
+placeholder="Slot number">
+
+<input
+id="checkPassword"
+type="password"
+inputmode="numeric"
+maxlength="5"
+placeholder="Slot password">
+
+<button id="checkPrivateButton">
+Check
+</button><p id="checkError" class="error"></p></div><div
+id="checkResult"
+class="card hidden">
+</div><button class="back">
+Back
+</button></section><!-- FULL PAGE --><section id="fullPage" class="page hidden"><h1>
+⚠️ Public Slot is full
+</h1><div class="notice">Please check your space you have to snyc the spaces
+
+</div><button
+id="agreeButton"
+class="green">
+
+Ok I will say to barmaan
+
+</button><button
+id="refuseButton"
+class="red">
+
+No i don't want
+
+</button></section><!-- NO SPACE --><section id="noSpacePage" class="page hidden"><h1>
+⚠️ No empty Slot
+</h1><div class="notice">There isn't a empty slot try again later please
+
+</div><button class="back">
+Back
+</button></section><!-- LOCK --><section id="lockPage" class="page hidden"><h1>
+This web site isn't available for rude persons 😠
+</h1><div class="notice">We Say you have to snyc but you didn't listen
+
+<br>So we locked the website
+
+</div><div class="timer"><div>
+Unlock timer
+</div><strong id="timer">
+00:00:00
+</strong></div><button
+id="sorryButton"
+disabled>
+
+I'm so sorry
+
+</button></section><!-- RESTORE PAGE --><section
+id="restorePage"
+class="page hidden"><h1>
+♻️ Restore
+</h1><div class="card"><h2 id="restoreTitle">
+Restore in progress...
+</h2><p id="restoreTimer">
+Preparing...
+</p><div class="progress"><div
+id="restoreProgress"
+class="bar"
+style="width:0%">0%
+
+</div></div><div id="restoreResult">
+</div></div></section></div><script src="script.js"></script></body>
+</html>
